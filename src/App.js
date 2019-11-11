@@ -6,7 +6,7 @@ import { Route } from "react-router-dom";
 const App = () => (
   <div>
     <Navigation />
-<Route path="/" componet={Home}/>
+<Route exact path="/" componet={Home}/>
 <Route path="/about" component={About}/>
 <Route path="/contact" component={Contact}/>
 
@@ -14,3 +14,8 @@ const App = () => (
 );
 
 export default App;
+
+//I fixed the debug but i have a question what went wrong
+{/* <Route exact path="/" component={Home}/>
+<Route path="/about" component={About}/>
+<Route path="/contact" component={Contact}/> */}
